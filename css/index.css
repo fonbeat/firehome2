@@ -958,9 +958,7 @@ ul{
 
 
 
-.learn{
-    color: #66ABFF;
-}
+
 
 
 
@@ -980,7 +978,8 @@ ul{
 }
 
 .arrow-right-sign:before {
-    content: "\25b7";
+    content: "\2771";
+    color: #66ABFF;
 }
 
 
@@ -988,17 +987,39 @@ ul{
 
 
 
-
+.learn{
+    color: #66ABFF;
+    text-decoration: none;
+}
 
 .blk--foot p{
     color: #dbdce1;
     padding: 0;
     margin: 0;
 }
-.blk--foot a {
-    color: #DBDCE1;
-    text-decoration:none;
+
+.blk-foot-link a{
+    color: #dbdce1;
+    text-decoration: none;
+    
 }
+.blk-foot-link{
+    margin-top:5px ;
+}
+.blk-foot-link:hover{
+    text-decoration: underline;
+}
+.footer-link{
+    color: #dbdce1;
+    text-decoration: none;
+}
+.footer-link:hover{
+    text-decoration: underline;
+}
+.blk-foot-link:first-child{
+    margin: 0;
+}
+
 
 
 
@@ -1051,15 +1072,14 @@ ul{
 }
 
 .nav-menu ul, .nav-menu--slideout ul {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding:0;
     list-style: none;
 }
 .nav-menu--slideout .nav-menu__list {
     padding-left: 1.5em;
     position: absolute;
-    overflow: auto;
-    overflow-x: hidden;
+    /* overflow: auto;
+    overflow-x: hidden; */
     bottom: 0;
     right: 0;
     left: 0;
